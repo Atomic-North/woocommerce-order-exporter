@@ -1,4 +1,5 @@
 <?php
+
 /**
  * Plugin Name: WooCommerce Order Exporter
  * Description: A plugin to export selected WooCommerce order data, allow selecting custom order data, and set a flag on an order that has already been exported.
@@ -153,9 +154,7 @@ function wc_order_exporter_export_orders_callback()
             array(
                 'key' => $exported_flag,
                 'compare' => 'NOT EXISTS'
-Continuing with the AJAX callback function to export orders and set the exported flag:
 
-```php
             ),
         ),
     );
